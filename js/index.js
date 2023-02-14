@@ -9,7 +9,6 @@ document.querySelector('#close').onclick = () => {
 }
 
 
-
 window.onscroll = () => {
 
   navbar.classList.remove('active');
@@ -18,5 +17,17 @@ window.onscroll = () => {
     document.querySelector('header').classList.add('active');
   } else {
     document.querySelector('header').classList.remove('active');
+  }
+}
+
+
+let themeToggler = document.querySelector('#theme-toggler');
+themeToggler.onclick = () => {
+  themeToggler.classList.toggle('fa-sun');
+  themeToggler.classList.toggle('fa-moon');
+  if (themeToggler.classList.contains('fa-sun')){
+    document.querySelector('body').classList.add('active');
+  } else{
+    document.querySelector('body').classList.remove('active');
   }
 }

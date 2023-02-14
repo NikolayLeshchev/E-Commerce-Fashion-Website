@@ -43,6 +43,13 @@ body {
   background: #eee;
 }
 
+body.active{
+    --white-color: #111;
+    --black-color: #fff;
+    --light-color: rgba(255, 255, 255, .3);
+    background: #222;
+}
+
 header {
   width: 100%;
   display: flex;
